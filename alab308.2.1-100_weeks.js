@@ -23,4 +23,6 @@ function calculateSpaceNeeded(initialPlants, weeks) {
      console.log(`Radius of the expanded garden: ${radius.toFixed(2)} meters.`);
  }
  
+ // Calculate the space needed for 100 plants over 10 weeks
+ calculateSpaceNeeded(initialPlants, 10);
  
