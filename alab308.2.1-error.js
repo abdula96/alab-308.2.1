@@ -16,3 +16,15 @@ function checkGardenSpace(initialPlants) {
     
     // Calculate the total area required for all plants
     const totalAreaRequired = initialPlants * plantSpace;
+
+    try {
+        // Check if the required area exceeds the available area
+        if (totalAreaRequired > availableArea) {
+            throw new Error(`Insufficient space! Required: ${totalAreaRequired.toFixed(2)} square meters, Available: ${availableArea.toFixed(2)} square meters.`);
+        }
+
+        // If space is sufficient, log the details
+        console.log(`Total area required: ${totalAreaRequired.toFixed(2)} square meters.`);
+        console.log(`Available area: ${availableArea.toFixed(2)} square meters.`);
+        console.log("Sufficient space available for planting the initial number of plants.");
+    } 
