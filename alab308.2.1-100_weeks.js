@@ -14,3 +14,13 @@ function calculateSpaceNeeded(initialPlants, weeks) {
 
     // Calculate total area required for all plants
     const totalAreaRequired = plantCount * plantSpace;
+
+     // Calculate the radius of the expanded garden
+     const radius = Math.sqrt(totalAreaRequired / PI);
+
+     console.log(`After ${weeks} weeks, there will be ${plantCount} plants.`);
+     console.log(`Total area required: ${totalAreaRequired.toFixed(2)} square meters.`);
+     console.log(`Radius of the expanded garden: ${radius.toFixed(2)} meters.`);
+ }
+ 
+ 
