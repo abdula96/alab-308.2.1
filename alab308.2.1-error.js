@@ -31,3 +31,6 @@ function checkGardenSpace(initialPlants) {
         console.error(error.message); // Log the error message
     }
 }
+
+// Check the space for 100 plants in the original garden
+checkGardenSpace(initialPlants);
