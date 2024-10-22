@@ -16,3 +16,21 @@ function predictPlantGrowth(weeks) {
         plantCount *= 2; // Plants double in number each week
         
         console.log(`Week ${week}: ${plantCount} plants`);
+
+         // Control flow based on the number of plants
+         if (plantCount > maxCapacity * 0.8) {
+            console.log("Action: Prune the plants.");
+        } else if (plantCount >= maxCapacity * 0.5 && plantCount <= maxCapacity * 0.8) {
+            console.log("Action: Monitor the plants.");
+        } else {
+            console.log("Action: There is room to plant more plants.");
+        }
+    }
+}
+
+// Testing the growth prediction for 1, 2, and 3 weeks
+predictPlantGrowth(1);
+console.log('-----------------------');
+predictPlantGrowth(2);
+console.log('-----------------------');
+predictPlantGrowth(3);
