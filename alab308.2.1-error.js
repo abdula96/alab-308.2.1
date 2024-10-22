@@ -27,4 +27,7 @@ function checkGardenSpace(initialPlants) {
         console.log(`Total area required: ${totalAreaRequired.toFixed(2)} square meters.`);
         console.log(`Available area: ${availableArea.toFixed(2)} square meters.`);
         console.log("Sufficient space available for planting the initial number of plants.");
-    } 
+    } catch (error) {
+        console.error(error.message); // Log the error message
+    }
+}
